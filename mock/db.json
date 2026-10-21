@@ -1,1 +1,22 @@
-{ "taches": [], "projets": [], "membres": [], "idees": [] } 
+{ "taches": [
+  { "id": "1", "titre": "Maquetter le Kanban", "statut": "EN_COURS", "projetId": "p-1", "membreId": "m-1", "echeance": "2026-11-05" },
+  { "id": "2", "titre": "Écrire les tests du reducer", "statut": "A_FAIRE", "projetId": "p-1", "membreId": "m-2", "echeance": "2026-11-10" },
+  { "id": "3", "titre": "Revoir l'accessibilité du formulaire", "statut": "EN_REVUE", "projetId": "p-1", "membreId": "m-3", "echeance": "2026-11-12" },
+  { "id": "4", "titre": "Configurer le déploiement", "statut": "TERMINEE", "projetId": "p-2", "membreId": "m-2", "echeance": "2026-10-30" },
+  { "id": "5", "titre": "Choisir la palette de couleurs", "statut": "A_FAIRE", "projetId": "p-2", "membreId": null, "echeance": "2026-11-15" },
+  { "id": "6", "titre": "Connecter la liste au back-end", "statut": "EN_COURS", "projetId": "p-2", "membreId": "m-1", "echeance": "2026-11-08" }
+],
+
+  "projets": [
+    { "id": "p-1", "nom": "Nouveau site" },
+    { "id": "p-2", "nom": "Application mobile" }
+  ],
+
+  "membres": [
+    { "id": "m-1", "nom": "Antoine Huet" },
+    { "id": "m-2", "nom": "Nathan Goualard" },
+    { "id": "m-3", "nom": "Maxime Derien" }
+  ],
+
+  "idees": []
+}
