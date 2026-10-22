@@ -1,4 +1,4 @@
-export function Tache({titre }: {titre : string}){
+export function EcranAVenir({titre }: {titre : string}){
     return (
         <main>
             <h1>{titre}</h1>

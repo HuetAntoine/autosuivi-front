@@ -1,8 +1,8 @@
-import { useFetch } from '../hooks/useFetch';
-import type { Tache } from '../types';
+import { useFetch, API_URL } from '../hooks/useFetch';
+import { LIBELLES_STATUT, type Tache } from '../types';
 
 export function ListeTaches() {
-    const { data: taches, loading, error } = useFetch<Tache[]>('http://localhost:3001/taches');
+    const { data: taches, loading, error } = useFetch<Tache[]>(`${API_URL}/taches`);
 
     return (
         <main>
@@ -12,7 +12,7 @@ export function ListeTaches() {
             <ul>
                 {taches?.map(t => (
                     <li key={t.id}>
-                        {t.titre} — {t.statut}
+                        {t.titre} — {LIBELLES_STATUT[t.statut]}
                     </li>
                 ))}
             </ul>
