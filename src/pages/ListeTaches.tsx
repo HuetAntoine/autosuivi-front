@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { BarreFiltres } from '../components/BarreFiltres';
 import { useDebounce } from '../hooks/useDebounce';
 import { useFetch, API_URL } from '../hooks/useFetch';
@@ -29,7 +30,7 @@ export function ListeTaches() {
             <ul>
                 {visibles?.map(t => (
                     <li key={t.id}>
-                        {t.titre} — {LIBELLES_STATUT[t.statut]}
+                        <Link to={`/taches/${t.id}`}>{t.titre}</Link> — {LIBELLES_STATUT[t.statut]}
                     </li>
                 ))}
             </ul>
